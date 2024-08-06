@@ -1,0 +1,21 @@
+[ req ]
+default_bits       = 2048
+prompt             = no
+default_md         = sha256
+distinguished_name = req_distinguished_name
+req_extensions     = req_ext
+
+[ req_distinguished_name ]
+C  = US
+ST = State
+L  = City
+O  = Organization
+OU = Organizational Unit
+CN = *.apps-crc.testing
+
+[ req_ext ]
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1   = *.apps-crc.testing
+DNS.2   = api.crc.testing
