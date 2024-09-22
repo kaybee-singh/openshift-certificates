@@ -43,7 +43,7 @@ echo 1000 > serial
 
 ```bash
 openssl genrsa -out ~/openshift-certificates/ca/private/cakey.pem 2048
-openssl req -new -x509 -config ~/openshift-certificates/ca/ca_openssl.cnf -key ~/openshift-certificates/ca/private/cakey.pem -out ~/openshift-certificates/ca/cacerts/ca.pem -days 3650 -extensions v3_ca
+openssl req -new -x509 -config ~/openshift-certificates/ca_openssl.cnf -key ~/openshift-certificates/ca/private/cakey.pem -out ~/openshift-certificates/ca/cacerts/ca.pem -days 3650 -extensions v3_ca
 ``` 
 - Create the server CSR to get signed by the CA created in above steps.
 
