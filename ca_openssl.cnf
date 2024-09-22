@@ -2,7 +2,7 @@
 default_ca = my_ca
 
 [ my_ca ]
-dir               = /root/ca
+dir               = /root/openshift-certificates/ca
 database          = $dir/index.txt
 new_certs_dir     = $dir/newcerts
 certificate       = $dir/cacerts/ca.pem
